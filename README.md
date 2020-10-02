@@ -26,12 +26,6 @@ npm run
 
 Simply enter valid version numbers into the input fields and the result field will display whether or not the first version number is "before", "after", or "equal" to the second.
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
