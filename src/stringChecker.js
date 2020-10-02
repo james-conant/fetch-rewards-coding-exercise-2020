@@ -1,7 +1,8 @@
 const stringChecker = (string1, string2) => {
   if ((string1.length || string2.length) < 3)
     return "Enter Valid Version Numbers";
-
+  if ((string1[string1.length - 1] || string2[string2.length - 1]) === ".")
+    return "Enter Valid Version Numbers";
   let i = 0;
   while (i <= Math.floor(string1.length, string2.length)) {
     if (
