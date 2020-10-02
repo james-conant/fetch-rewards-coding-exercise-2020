@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, useState } from "react";
+import "./App.css";
 
 function App() {
+  const [string1, setString1] = useState("");
+  const [string2, setString2] = useState("");
+  const [result, setResult] = useState("->Result Here<-");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="App">
+        <h1>Version #</h1>
+        <form>
+          <label>String 1 </label>
+          <input
+            placeholder="Enter here"
+            type="text"
+            onChange={(e) => setString1(e.target.value)}
+          ></input>
+          <br />
+          <label>String 2 </label>
+          <input
+            placeholder="Enter here"
+            type="text"
+            onChange={(e) => setString2(e.target.value)}
+          ></input>
+          <button type="button">Check!</button>
+        </form>
+      </div>
+      <div className="result">{result}</div>
+    </Fragment>
   );
 }
 
