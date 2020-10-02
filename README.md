@@ -8,7 +8,7 @@ Clone the GitHub repository down to your computer.
 
 ## Installation
 
-Use the package manager npm to install Version Number.
+Use the package manager npm to install Version Number dependencies.
 
 ```bash
 npm install
@@ -24,7 +24,7 @@ npm run
 
 ## Usage
 
-Simply enter valid version numbers into the input fields and the result field will display whether or not the first version number is "before", "after" and "equal" to the second.
+Simply enter valid version numbers into the input fields and the result field will display whether or not the first version number is "before", "after", or "equal" to the second.
 
 ## Contributing
 
